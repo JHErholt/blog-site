@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/post"
+media_folder: "_site/assets/post"
 public_folder: "/assets/post"
 collections:
   - name: "post"
