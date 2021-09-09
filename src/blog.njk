@@ -1,0 +1,19 @@
+---
+layout: "base.njk"
+title: My blog page
+---
+<script>
+    var getA = document.getElementsByTagName('A')[1];
+    getA.style = 'text-decoration: underline;'
+</script>
+
+<section>
+    <div>
+        <h1>Recent articles</h1>
+    </div>
+    <ul role="list">
+        {% for post in collections.post | reverse%}
+            {% include "article-snippet.njk" %}
+        {% endfor %}
+    </ul>
+</section>

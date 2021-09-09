@@ -1,0 +1,13 @@
+<footer>
+    <section>
+        <div class="center padding" id="copyright"></div>
+    </section>
+</footer>
+<script>
+    const d = new Date();
+    const y = d.getFullYear();
+    var getFooterContainer = document.getElementById('copyright');
+    var createFooterText = document.createElement('p');
+    createFooterText.innerHTML = '&#169; ' + y + ' JHErholt'
+    getFooterContainer.appendChild(createFooterText)
+</script>

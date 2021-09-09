@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog page</title>
+
+    
+    <link rel="stylesheet" href="/style.css">
+
+    
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+</head>
+<body>
+    
+    <header>
+    <section>
+            <div class="navbar-container padding ">
+                <nav>
+                    <ul class="flex-group center">
+                        <li class="flex-item"><a href="/">Front</a></li>
+                        <li class="flex-item"><a href="/blog">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</header>
+    <main>
+        <script>
+    var getA = document.getElementsByTagName('A')[1];
+    getA.style = 'text-decoration: underline;'
+</script>
+
+<section>
+    <div>
+        <h1>Recent articles</h1>
+    </div>
+    <ul role="list">
+        
+            <li>
+      <article class="padding">
+        <img src="/assets/blog/test-1.png" alt="This is an alt" class="snippet-img">
+        <h3 class="snippet-title"><a href="/post/2021-09-09-my-first-article/">My second article</a></h3>
+        <p class="snippet-meta">by <span>JHErholt</span> on <span>9. sep. 2021</span></p>
+        <p class="snippet-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, vitae!</p>
+        <a href="/post/2021-09-09-my-first-article/" class="snippet-btn">Continue Reading</a>
+      </article>
+</li>
+        
+            <li>
+      <article class="padding">
+        <img src="/assets/blog/test-1.png" alt="This is an alt" class="snippet-img">
+        <h3 class="snippet-title"><a href="/post/2021-09-09-my-first-article copy/">My first article</a></h3>
+        <p class="snippet-meta">by <span>JHErholt</span> on <span>9. sep. 2021</span></p>
+        <p class="snippet-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, vitae!</p>
+        <a href="/post/2021-09-09-my-first-article copy/" class="snippet-btn">Continue Reading</a>
+      </article>
+</li>
+        
+    </ul>
+</section>
+    </main>
+    <footer>
+    <section>
+        <div class="center padding" id="copyright"></div>
+    </section>
+</footer>
+<script>
+    const d = new Date();
+    const y = d.getFullYear();
+    var getFooterContainer = document.getElementById('copyright');
+    var createFooterText = document.createElement('p');
+    createFooterText.innerHTML = '&#169; ' + y + ' JHErholt'
+    getFooterContainer.appendChild(createFooterText)
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+---
+title: My front page
+layout: "base.njk"
+---
+<script>
+    var getA = document.getElementsByTagName('A')[0];
+    getA.style = 'text-decoration: underline;'
+</script>
+
+<section>
+    <div class="flex-group padding ">
+        <div class="flex-item">
+            <h1>Welcome to my blog</h1>
+            <p>Here you can see a whole world of fun!</p>
+        </div>
+        <div class="flex-item">
+            
+        </div>
+    </div>
+</section>
+<section class="post-section">
+    <div>
+        {% for post in collections.featured | reverse %}
+            {% include "article-snippet.njk" %}
+        {% endfor %}
+    </div>
+</section>
