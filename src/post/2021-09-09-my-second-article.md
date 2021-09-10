@@ -1,9 +1,9 @@
 ---
-title: My first article
+title: My second article
 author: JHErholt
 date: 2021-09-09
 tags: ['post', 'featured']
-image: /assets/blog/test-1.png
+image: /assets/post/120601577_2680940612235287_2904595255061783232_n.jpg
 imageAlt: This is an alt
 description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, vitae!
 ---
