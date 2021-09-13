@@ -7,7 +7,7 @@ layout: "base.njk"
     getA.style = 'text-decoration: underline;'
 </script>
 
-<section>
+<section class="front-section">
     <div class="flex-group padding ">
         <div class="flex-item">
             <h1>Welcome to my blog</h1>
@@ -19,7 +19,7 @@ layout: "base.njk"
     </div>
 </section>
 <section class="post-section">
-    <div>
+    <div class="post-container">
         {% for post in collections.featured | reverse %}
             {% include "article-snippet.njk" %}
         {% endfor %}

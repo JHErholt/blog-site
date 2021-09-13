@@ -12,8 +12,10 @@ title: My blog page
         <h1>Recent articles</h1>
     </div>
     <ul role="list">
-        {% for post in collections.post | reverse%}
-            {% include "article-snippet.njk" %}
-        {% endfor %}
+        <div class="post-container"> 
+            {% for post in collections.post | reverse%}
+                {% include "article-snippet.njk" %}
+            {% endfor %}
+        </div>
     </ul>
 </section>
